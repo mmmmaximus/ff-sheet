@@ -1,0 +1,3051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Adventurer!</title>
+    <script type="module" src="scripts/game.js"></script>
+</head>
+<body>
+    <!-- instruction and plot-------------------------------------- -->
+    <a href='books/ff01 instructions-min.pdf' target="_blank">Instructions</a>
+    <br>
+    <a href='books/ff01 plot-min.pdf' target="_blank">Plot</a>
+  
+    <!-- all pages -------------------------------------->
+    <div id="1" class="page">
+        <img src="books/ff01images/ff01_page-0001.jpg">
+        <img src="books/ff01images/ff01_page-0002.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">71</button>
+        <button class="otherPage">278</button>
+    </div>
+    <div id="2" class="page">
+        <img src="books/ff01images/ff01_page-0003.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="lucky otherPage">269</button>
+        <button class="unlucky otherPage">16</button>
+    </div>
+    <div id="3" class="page">
+        <img src="books/ff01images/ff01_page-0003.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">272</button>
+        <button class="otherPage">127</button>
+    </div>
+    <div id="4" class="page">
+        <img src="books/ff01images/ff01_page-0003.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">46</button>
+        <button class="otherPage">332</button>
+    </div>
+    <div id="5" class="page">
+        <img src="books/ff01images/ff01_page-0003.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">97</button>
+        <button class="otherPage">292</button>
+    </div>
+    <div id="6" class="page">
+        <img src="books/ff01images/ff01_page-0004.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">89</button>
+    </div>
+    <div id="7" class="page">
+        <img src="books/ff01images/ff01_page-0004.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">214</button>
+    </div>
+    <div id="8" class="page">
+        <img src="books/ff01images/ff01_page-0004.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage escape">189</button>
+        <button class="otherPage win">273</button>
+    </div>
+    <div id="9" class="page">
+        <img src="books/ff01images/ff01_page-0004.jpg">
+        <img src="books/ff01images/ff01_page-0006.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">34</button>
+        <button class="otherPage">322</button>
+    </div>
+    <div id="10" class="page">
+        <img src="books/ff01images/ff01_page-0006.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">77</button>
+    </div>    
+    <div id="11" class="page">
+        <img src="books/ff01images/ff01_page-0005.jpg">
+        <img src="books/ff01images/ff01_page-0006.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">366</button>
+        <button class="otherPage">250</button>
+    </div>
+    <div id="12" class="page">
+        <img src="books/ff01images/ff01_page-0006.jpg">
+        <img src="books/ff01images/ff01_page-0007.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">161</button>
+        <button class="otherPage win">256</button>
+        <button class="otherPage win">364</button>
+    </div>
+    <div id="13" class="page">
+        <img src="books/ff01images/ff01_page-0007.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">282</button>
+    </div>
+    <div id="14" class="page">
+        <img src="books/ff01images/ff01_page-0007.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">161</button>
+        <button class="otherPage win">117</button>
+    </div>
+    <div id="15" class="page">
+        <img src="books/ff01images/ff01_page-0007.jpg">
+        <img src="books/ff01images/ff01_page-0008.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">367</button>
+    </div>
+    <div id="16" class="page">
+        <img src="books/ff01images/ff01_page-0008.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">50</button>
+        <button class="otherPage escape">269</button>
+    </div>
+    <div id="17" class="page">
+        <img src="books/ff01images/ff01_page-0008.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage escape">380</button>
+        <button class="otherPage lucky">327</button>
+        <button class="otherPage unlucky">144</button>
+    </div>
+    <div id="18" class="page">
+        <img src="books/ff01images/ff01_page-0009.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">261</button>
+        <button class="otherPage unlucky">348</button>
+     </div>
+    <div id="19" class="page">
+        <img src="books/ff01images/ff01_page-0009.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">317</button>
+    </div>
+    <div id="20" class="page">
+        <img src="books/ff01images/ff01_page-0009.jpg">
+        <img src="books/ff01images/ff01_page-0010.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">376</button>
+        <button class="otherPage escape">291</button>
+    </div>
+    <div id="21" class="page">
+        <img src="books/ff01images/ff01_page-0010.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">339</button>
+        <button class="otherPage">293</button>
+    </div>
+    <div id="22" class="page">
+        <img src="books/ff01images/ff01_page-0010.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">4</button>
+    </div>
+    <div id="23" class="page">
+        <img src="books/ff01images/ff01_page-0010.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">326</button>
+        <button class="otherPage">229</button>
+    </div>
+    <div id="24" class="page">
+        <img src="books/ff01images/ff01_page-0010.jpg">
+        <img src="books/ff01images/ff01_page-0011.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage escape">360</button>
+        <button class="otherPage win">135</button>
+    </div>
+    <div id="25" class="page">
+        <img src="books/ff01images/ff01_page-0011.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage escape">90</button>
+        <button class="otherPage">340</button>
+    </div>
+    <div id="26" class="page">
+        <img src="books/ff01images/ff01_page-0011.jpg">
+        <img src="books/ff01images/ff01_page-0012.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">371</button>
+    </div>
+    <div id="27" class="page">
+        <img src="books/ff01images/ff01_page-0012.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useEnchantedSword" class="getItem">Use enchanted sword</button>
+        <button class="otherPage">319</button>
+    </div>
+    <div id="28" class="page">
+        <img src="books/ff01images/ff01_page-0013.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">351</button>
+    </div>
+    <div id="29" class="page">
+        <img src="books/ff01images/ff01_page-0013.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">375</button>
+    </div>
+    <div id="30" class="page">
+        <img src="books/ff01images/ff01_page-0013.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">67</button>
+        <button class="otherPage">267</button>
+    </div>
+    <div id="31" class="page">
+        <img src="books/ff01images/ff01_page-0013.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">90</button>
+    </div>
+    <div id="32" class="page">
+        <img src="books/ff01images/ff01_page-0014.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">124</button>
+    </div>
+    <div id="33" class="page">
+        <img src="books/ff01images/ff01_page-0014.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage escape">320</button>
+        <button class="otherPage win">147</button>
+    </div>
+    <div id="34" class="page">
+        <img src="books/ff01images/ff01_page-0014.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useMalletAndChisel" class="getItem">Take wood mallet and silver chisel</button>
+        <button class="otherPage">96</button>
+    </div>
+    <div id="35" class="page">
+        <img src="books/ff01images/ff01_page-0016.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">136</button>
+        <button class="otherPage">361</button>
+    </div>
+    <div id="36" class="page">
+        <img src="books/ff01images/ff01_page-0015.jpg">
+        <img src="books/ff01images/ff01_page-0016.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">263</button>
+        <button class="otherPage">353</button>
+    </div>
+    <div id="37" class="page">
+        <img src="books/ff01images/ff01_page-0016.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">366</button>
+        <button class="otherPage">11</button>
+        <button class="otherPage">277</button>
+    </div>
+    <div id="38" class="page">
+        <img src="books/ff01images/ff01_page-0016.jpg">
+        <img src="books/ff01images/ff01_page-0017.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="usePickledEggs">Take the food</button>
+        <button class="otherPage">66</button>
+    </div>
+    <div id="39" class="page">
+        <img src="books/ff01images/ff01_page-0017.jpg">
+        <img src="books/ff01images/ff01_page-0018.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">396</button>
+    </div>
+    <div id="40" class="page">
+        <img src="books/ff01images/ff01_page-0018.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">355</button>
+        <button class="otherPage">265</button>
+        <button class="otherPage">181</button>
+    </div>
+    <div id="41" class="page">
+        <img src="books/ff01images/ff01_page-0018.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">310</button>
+    </div>
+    <div id="42" class="page">
+        <img src="books/ff01images/ff01_page-0018.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">257</button>
+        <button class="otherPage">113</button>
+    </div>
+    <div id="43" class="page">
+        <img src="books/ff01images/ff01_page-0018.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">354</button>
+        <button class="otherPage">52</button>
+    </div>
+    <div id="44" class="page">
+        <img src="books/ff01images/ff01_page-0019.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">399</button>
+    </div>
+    <div id="45" class="page">
+        <img src="books/ff01images/ff01_page-0019.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">90</button>
+    </div>
+    <div id="46" class="page">
+        <img src="books/ff01images/ff01_page-0019.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">4</button>
+        <button class="otherPage">206</button>
+    </div>
+    <div id="47" class="page">
+        <img src="books/ff01images/ff01_page-0019.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage unlucky">158</button>
+        <button class="otherPage lucky">298</button>
+    </div>
+    <div id="48" class="page">
+        <img src="books/ff01images/ff01_page-0019.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">391</button>
+        <button class="otherPage">60</button>
+    </div>
+    <div id="49" class="page">
+        <img src="books/ff01images/ff01_page-0020.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">122</button>
+    </div>
+    <div id="50" class="page">
+        <img src="books/ff01images/ff01_page-0020.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useBronzeKey9" class="getItem">Take bronze key 9</button>
+        <button class="otherPage">269</button>
+    </div>
+    <div id="51" class="page">
+        <img src="books/ff01images/ff01_page-0020.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">287</button>
+    </div>
+    <div id="52" class="page">
+        <img src="books/ff01images/ff01_page-0020.jpg">
+        <img src="books/ff01images/ff01_page-0021.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">391</button>
+        <button class="otherPage">362</button>
+        <button class="otherPage">354</button>
+        <button class="otherPage">234</button>
+        <button class="otherPage">291</button>
+    </div>
+    <div id="53" class="page">
+        <img src="books/ff01images/ff01_page-0021.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">155</button>
+        <button class="otherPage unlucky">300</button>
+    </div>
+    <div id="54" class="page">
+        <img src="books/ff01images/ff01_page-0021.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">308</button>
+        <button class="otherPage">179</button>
+    </div>
+    <div id="55" class="page">
+        <img src="books/ff01images/ff01_page-0021.jpg">
+        <img src="books/ff01images/ff01_page-0022.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">7</button>
+        <button class="otherPage unlucky">166</button>
+    </div>
+    <div id="56" class="page">
+        <img src="books/ff01images/ff01_page-0022.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">399</button>
+    </div>
+    <div id="57" class="page">
+        <img src="books/ff01images/ff01_page-0022.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">16</button>
+        <button class="otherPage">2</button>
+        <button class="otherPage">119</button>
+    </div>
+    <div id="58" class="page">
+        <img src="books/ff01images/ff01_page-0023.jpg">
+        <img src="books/ff01images/ff01_page-0024.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">15</button>
+        <button id="page367" class="otherPage lucky">367</button>
+    </div>
+    <div id="59" class="page">
+        <img src="books/ff01images/ff01_page-0024.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">150</button>
+    </div>
+    <div id="60" class="page">
+        <img src="books/ff01images/ff01_page-0024.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">48</button>
+    </div>
+    <div id="61" class="page">
+        <img src="books/ff01images/ff01_page-0024.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">29</button>
+        <button class="otherPage escape">375</button>
+    </div>
+    <div id="62" class="page">
+        <img src="books/ff01images/ff01_page-0025.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">6</button>
+        <button class="otherPage">89</button>
+    </div>
+    <div id="63" class="page">
+        <img src="books/ff01images/ff01_page-0025.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">281</button>
+        <button class="otherPage">10</button>
+    </div>
+    <div id="64" class="page">
+        <img src="books/ff01images/ff01_page-0025.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <text>You are dead</text>
+    </div>
+    <div id="65" class="page">
+        <img src="books/ff01images/ff01_page-0025.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage escape">293</button>
+        <button class="otherPage">372</button>
+    </div>
+    <div id="66" class="page">
+        <img src="books/ff01images/ff01_page-0026.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">104</button>
+        <button class="otherPage">99</button>
+    </div>
+    <div id="67" class="page">
+        <img src="books/ff01images/ff01_page-0026.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">267</button>
+        <button class="otherPage">177</button>
+    </div>
+    <div id="68" class="page">
+        <img src="books/ff01images/ff01_page-0026.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">303</button>
+    </div>
+    <div id="69" class="page">
+        <img src="books/ff01images/ff01_page-0026.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">244</button>
+    </div>
+    <div id="70" class="page">
+        <img src="books/ff01images/ff01_page-0028.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">267</button>
+    </div>
+    <div id="71" class="page">
+        <img src="books/ff01images/ff01_page-0027.jpg">
+        <img src="books/ff01images/ff01_page-0028.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">301</button>
+        <button class="otherPage unlucky">248</button>
+    </div>
+    <div id="72" class="page">
+        <img src="books/ff01images/ff01_page-0028.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useLeatherArmor" class="getItem">Replace the Leather Armor</button>
+        <button class="otherPage">319</button>
+    </div>
+    <div id="73" class="page">
+        <img src="books/ff01images/ff01_page-0028.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">218</button>
+    </div>
+    <div id="74" class="page">
+        <img src="books/ff01images/ff01_page-0028.jpg">
+        <img src="books/ff01images/ff01_page-0029.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">279</button>
+        <button class="otherPage unlucky">118</button>
+    </div>
+    <div id="75" class="page">
+        <img src="books/ff01images/ff01_page-0029.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useEyeOfTheCyclopsAndKey" class="getItem">Take eye of the cyclops and key 111</button>
+        <button class="otherPage">93</button>
+    </div>
+    <div id="76" class="page">
+        <img src="books/ff01images/ff01_page-0029.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">244</button>
+    </div>
+    <div id="77" class="page">
+        <img src="books/ff01images/ff01_page-0029.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">345</button>
+        <button class="otherPage">18</button>
+    </div>
+    <div id="78" class="page">
+        <img src="books/ff01images/ff01_page-0029.jpg">
+        <img src="books/ff01images/ff01_page-0030.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">159</button>
+        <button class="otherPage">237</button>
+    </div>
+    <div id="79" class="page">
+        <img src="books/ff01images/ff01_page-0030.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">137</button>
+        <button class="otherPage">267</button>
+    </div>
+    <div id="80" class="page">
+        <img src="books/ff01images/ff01_page-0030.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">129</button>
+        <button class="otherPage">123</button>
+        <button class="otherPage">195</button>
+        <button class="otherPage">140</button>
+    </div>
+    <div id="81" class="page">
+        <img src="books/ff01images/ff01_page-0032.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">205</button>
+    </div>
+    <div id="82" class="page">
+        <img src="books/ff01images/ff01_page-0032.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">208</button>
+        <button class="otherPage lucky">147</button>
+        <button class="otherPage unlucky">33</button>
+    </div>
+    <div id="83" class="page">
+        <img src="books/ff01images/ff01_page-0032.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">360</button>
+        <button class="otherPage unlucky">154</button>
+    </div>
+    <div id="84" class="page">
+        <img src="books/ff01images/ff01_page-0031.jpg">
+        <img src="books/ff01images/ff01_page-0032.jpg">
+        <img src="books/ff01images/ff01_page-0033.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">204</button>
+        <button class="otherPage">280</button>
+        <button class="otherPage">377</button>
+    </div>
+    <div id="85" class="page">
+        <img src="books/ff01images/ff01_page-0033.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">106</button>
+        <button class="otherPage">373</button>
+        <button class="otherPage">318</button>
+        <button class="otherPage">59</button>
+    </div>
+    <div id="86" class="page">
+        <img src="books/ff01images/ff01_page-0033.jpg">
+        <img src="books/ff01images/ff01_page-0034.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">259</button>
+        <button class="otherPage lucky">350</button>
+    </div>
+    <div id="87" class="page">
+        <img src="books/ff01images/ff01_page-0034.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">262</button>
+    </div>
+    <div id="88" class="page">
+        <img src="books/ff01images/ff01_page-0034.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">216</button>
+        <button class="otherPage">384</button>
+    </div>
+    <div id="89" class="page">
+        <img src="books/ff01images/ff01_page-0034.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">286</button>
+    </div>
+    <div id="90" class="page">
+        <img src="books/ff01images/ff01_page-0035.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">253</button>
+    </div>
+    <div id="91" class="page">
+        <img src="books/ff01images/ff01_page-0035.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">131</button>
+        <button class="otherPage unlucky">20</button>
+    </div>
+    <div id="92" class="page">
+        <img src="books/ff01images/ff01_page-0035.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">71</button>
+    </div>
+    <div id="93" class="page">
+        <img src="books/ff01images/ff01_page-0035.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">8</button>
+    </div>
+    <div id="94" class="page">
+        <img src="books/ff01images/ff01_page-0035.jpg">
+        <img src="books/ff01images/ff01_page-0036.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">260</button>
+        <button class="otherPage">329</button>
+    </div>
+    <div id="95" class="page">
+        <img src="books/ff01images/ff01_page-0036.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">205</button>
+    </div>
+    <div id="96" class="page">
+        <img src="books/ff01images/ff01_page-0036.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">374</button>
+    </div>
+    <div id="97" class="page">
+        <img src="books/ff01images/ff01_page-0037.jpg">
+        <img src="books/ff01images/ff01_page-0038.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">334</button>
+        <button class="otherPage">247</button>
+        <button class="otherPage">292</button>
+    </div>
+    <div id="98" class="page">
+        <img src="books/ff01images/ff01_page-0038.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">358</button>
+    </div>
+    <div id="99" class="page">
+        <img src="books/ff01images/ff01_page-0038.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">383</button>
+    </div>
+    <div id="100" class="page">
+        <img src="books/ff01images/ff01_page-0039.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">346</button>
+        <button class="otherPage">91</button>
+    </div>
+    <div id="101" class="page">
+        <img src="books/ff01images/ff01_page-0039.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">327</button>
+    </div>
+    <div id="102" class="page">
+        <img src="books/ff01images/ff01_page-0039.jpg">
+        <img src="books/ff01images/ff01_page-0040.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">303</button>
+        <button class="otherPage">19</button>
+        <button class="otherPage">68</button>
+    </div>
+    <div id="103" class="page">
+        <img src="books/ff01images/ff01_page-0040.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">252</button>
+        <button class="otherPage">359</button>
+    </div>
+    <div id="104" class="page">
+        <img src="books/ff01images/ff01_page-0040.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">49</button>
+    </div>
+    <div id="105" class="page">
+        <img src="books/ff01images/ff01_page-0040.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="hasPotionOfInvisibilityPage105" class="otherPage">39</button>
+        <button id="hasEyeOfTheCyclopsPage105" class="otherPage">382</button>
+        <button id="hasCheesePage105" class="otherPage">368</button>
+        <button id="hasTheGiverOfSleepPage105" class="otherPage">194</button>
+        <button id="hasYShapedStickPage105" class="otherPage">215</button>
+    </div>
+    <div id="106" class="page">
+        <img src="books/ff01images/ff01_page-0041.jpg">
+        <img src="books/ff01images/ff01_page-0040.jpg">
+        <img src="books/ff01images/ff01_page-0042.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">152</button>
+        <button class="otherPage">126</button>
+    </div>
+    <div id="107" class="page">
+        <img src="books/ff01images/ff01_page-0042.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">148</button>
+        <button class="otherPage">197</button>
+    </div>
+    <div id="108" class="page">
+        <img src="books/ff01images/ff01_page-0043.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">185</button>
+    </div>
+    <div id="109" class="page">
+        <img src="books/ff01images/ff01_page-0043.jpg">
+        <img src="books/ff01images/ff01_page-0044.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">120</button>
+        <button class="otherPage win">212</button>
+    </div>
+    <div id="110" class="page">
+        <img src="books/ff01images/ff01_page-0044.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">319</button>
+    </div>    
+    <div id="111" class="page">
+        <img src="books/ff01images/ff01_page-0044.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">249</button>
+    </div>
+    <div id="112" class="page">
+        <img src="books/ff01images/ff01_page-0044.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">142</button>
+        <button class="otherPage">105</button>
+    </div>
+    <div id="113" class="page">
+        <img src="books/ff01images/ff01_page-0044.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">285</button>
+        <button class="otherPage">78</button>
+    </div>
+    <div id="114" class="page">
+        <img src="books/ff01images/ff01_page-0044.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">359</button>
+    </div>
+    <div id="115" class="page">
+        <img src="books/ff01images/ff01_page-0045.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">95</button>
+        <button class="otherPage">313</button>
+        <button class="otherPage">330</button>
+    </div>
+    <div id="116" class="page">
+        <img src="books/ff01images/ff01_page-0045.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">378</button>
+        <button class="otherPage escape">42</button>
+    </div>
+    <div id="117" class="page">
+        <img src="books/ff01images/ff01_page-0046.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">354</button>
+        <button class="otherPage">308</button>
+    </div>
+    <div id="118" class="page">
+        <img src="books/ff01images/ff01_page-0046.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <text>You are dead</text>
+    </div>
+    <div id="119" class="page">
+        <img src="books/ff01images/ff01_page-0046.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">269</button>
+    </div>
+    <div id="120" class="page">
+        <img src="books/ff01images/ff01_page-0046.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">197</button>
+    </div>
+    <div id="121" class="page">
+        <img src="books/ff01images/ff01_page-0046.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">103</button>
+        <button class="otherPage">359</button>
+    </div>
+    <div id="122" class="page">
+        <img src="books/ff01images/ff01_page-0047.jpg">
+        <img src="books/ff01images/ff01_page-0048.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">268</button>
+        <button class="otherPage">282</button>
+        <button class="otherPage">13</button>
+    </div>
+    <div id="123" class="page">
+        <img src="books/ff01images/ff01_page-0048.jpg">
+        <img src="books/ff01images/ff01_page-0049.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">184</button>
+        <button class="otherPage lucky">164</button>
+        <button class="otherPage unlucky">140</button>
+    </div>
+    <div id="124" class="page">
+        <img src="books/ff01images/ff01_page-0049.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">138</button>
+        <button class="otherPage">76</button>
+    </div>
+    <div id="125" class="page">
+        <img src="books/ff01images/ff01_page-0049.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">73</button>
+    </div>
+    <div id="126" class="page">
+        <img src="books/ff01images/ff01_page-0050.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">152</button>
+        <button class="otherPage win">26</button>
+    </div>
+    <div id="127" class="page">
+        <img src="books/ff01images/ff01_page-0050.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">272</button>
+        <button class="otherPage">188</button>
+    </div>
+    <div id="128" class="page">
+        <img src="books/ff01images/ff01_page-0050.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">210</button>
+        <button class="otherPage">58</button>
+    </div>
+    <div id="129" class="page">
+        <img src="books/ff01images/ff01_page-0050.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">104</button>
+    </div>
+    <div id="130" class="page">
+        <img src="books/ff01images/ff01_page-0050.jpg">
+        <img src="books/ff01images/ff01_page-0051.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <text>Your bet:</text>
+        <input type="number" id="bet" min="1" name="bet" value=1>
+        <br><br>
+        <button class="otherPage escape">280</button>
+    </div>
+    <div id="131" class="page">
+        <img src="books/ff01images/ff01_page-0051.jpg">
+        <img src="books/ff01images/ff01_page-0052.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">291</button>
+    </div>
+    <div id="132" class="page">
+        <img src="books/ff01images/ff01_page-0052.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useWoodenShield" class="getItem">Take the Wooden Shield</button>
+        <button class="otherPage">319</button>
+    </div>
+    <div id="133" class="page">
+        <img src="books/ff01images/ff01_page-0052.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">52</button>
+    </div>
+    <div id="134" class="page">
+        <img src="books/ff01images/ff01_page-0053.jpg">
+        <img src="books/ff01images/ff01_page-0054.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">202</button>
+        <button class="otherPage">325</button>
+        <button class="otherPage">87</button>
+    </div>
+    <div id="135" class="page">
+        <img src="books/ff01images/ff01_page-0054.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useGold18" class="getItem">Take the 18 gold pieces</button>
+        <button class="otherPage">360</button>
+    </div>
+    <div id="136" class="page">
+        <img src="books/ff01images/ff01_page-0054.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">229</button>
+    </div>
+    <div id="137" class="page">
+        <img src="books/ff01images/ff01_page-0054.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">354</button>
+    </div>
+    <div id="138" class="page">
+        <img src="books/ff01images/ff01_page-0055.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">163</button>
+        <button class="otherPage">351</button>
+    </div>
+    <div id="139" class="page">
+        <img src="books/ff01images/ff01_page-0055.jpg">
+        <img src="books/ff01images/ff01_page-0056.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="page139" class="otherPage"></button>
+    </div>
+    <div id="140" class="page">
+        <img src="books/ff01images/ff01_page-0056.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">395</button>
+    </div>
+    <div id="141" class="page">
+        <img src="books/ff01images/ff01_page-0058.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">66</button>
+        <button class="otherPage">111</button>
+    </div>
+    <div id="142" class="page">
+        <img src="books/ff01images/ff01_page-0058.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">1</button>
+    </div>
+    <div id="143" class="page">
+        <img src="books/ff01images/ff01_page-0057.jpg">
+        <img src="books/ff01images/ff01_page-0058.jpg">
+        <img src="books/ff01images/ff01_page-0059.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">44</button>
+        <button class="otherPage escape">399</button>
+    </div>
+    <div id="144" class="page">
+        <img src="books/ff01images/ff01_page-0059.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">101</button>
+        <button class="otherPage unlucky">217</button>
+    </div>
+    <div id="145" class="page">
+        <img src="books/ff01images/ff01_page-0059.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useBronzeKey99" class="getItem">Take bronze key 99</button>
+        <button class="otherPage">363</button>
+    </div>
+    <div id="146" class="page">
+        <img src="books/ff01images/ff01_page-0060.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">366</button>
+        <button class="otherPage">11</button>
+    </div>
+    <div id="147" class="page">
+        <img src="books/ff01images/ff01_page-0060.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">208</button>
+    </div>
+    <div id="148" class="page">
+        <img src="books/ff01images/ff01_page-0060.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">230</button>
+    </div>
+    <div id="149" class="page">
+        <img src="books/ff01images/ff01_page-0061.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">181</button>
+        <button class="otherPage">265</button>
+        <button class="otherPage">355</button>
+    </div>
+    <div id="150" class="page">
+        <img src="books/ff01images/ff01_page-0061.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">222</button>
+        <button class="otherPage">297</button>
+        <button class="otherPage">133</button>
+    </div>
+    <div id="151" class="page">
+        <img src="books/ff01images/ff01_page-0061.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">218</button>
+        <button class="otherPage">86</button>
+        <button class="otherPage">158</button>
+    </div>
+    <div id="152" class="page">
+        <img src="books/ff01images/ff01_page-0062.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">371</button>
+    </div>
+    <div id="153" class="page">
+        <img src="books/ff01images/ff01_page-0062.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">399</button>
+    </div>
+    <div id="154" class="page">
+        <img src="books/ff01images/ff01_page-0062.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">41</button>
+    </div>
+    <div id="155" class="page">
+        <img src="books/ff01images/ff01_page-0063.jpg">
+        <img src="books/ff01images/ff01_page-0062.jpg">
+        <img src="books/ff01images/ff01_page-0064.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useCresentShield" class="getItem">Use Cresent Shield</button>
+        <button class="otherPage">300</button>
+    </div>
+    <div id="156" class="page">
+        <img src="books/ff01images/ff01_page-0064.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">343</button>
+        <button class="otherPage unlucky">92</button>
+    </div>
+    <div id="157" class="page">
+        <img src="books/ff01images/ff01_page-0065.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">4</button>
+        <button class="otherPage">329</button>
+    </div>
+    <div id="158" class="page">
+        <img src="books/ff01images/ff01_page-0065.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">218</button>
+    </div>
+    <div id="159" class="page">
+        <img src="books/ff01images/ff01_page-0065.jpg">
+        <img src="books/ff01images/ff01_page-0066.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">237</button>
+        <button class="otherPage unlucky">365</button>
+    </div>
+    <div id="160" class="page">
+        <img src="books/ff01images/ff01_page-0066.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">267</button>
+    </div>
+    <div id="161" class="page">
+        <img src="books/ff01images/ff01_page-0066.jpg">
+        <img src="books/ff01images/ff01_page-0067.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+    </div>
+    <div id="162" class="page">
+        <img src="books/ff01images/ff01_page-0067.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">23</button>
+        <button class="otherPage">69</button>
+    </div>
+    <div id="163" class="page">
+        <img src="books/ff01images/ff01_page-0067.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">28</button>
+        <button class="otherPage escape">351</button>
+    </div>
+    <div id="164" class="page">
+        <img src="books/ff01images/ff01_page-0067.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">129</button>
+        <button class="otherPage">236</button>
+    </div>
+    <div id="165" class="page">
+        <img src="books/ff01images/ff01_page-0068.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">141</button>
+        <button class="otherPage">66</button>
+        <button class="otherPage">249</button>
+    </div>
+    <div id="166" class="page">
+        <img src="books/ff01images/ff01_page-0068.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">218</button>
+        <button class="otherPage lucky">158</button>
+    </div>
+    <div id="167" class="page">
+        <img src="books/ff01images/ff01_page-0070.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">187</button>
+        <button class="otherPage">359</button>
+    </div>
+    <div id="168" class="page">
+        <img src="books/ff01images/ff01_page-0069.jpg">
+        <img src="books/ff01images/ff01_page-0070.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">372</button>
+        <button class="otherPage">65</button>
+        <button class="otherPage">293</button>
+    </div>
+    <div id="169" class="page">
+        <img src="books/ff01images/ff01_page-0070.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">400</button>
+    </div>
+    <div id="170" class="page">
+        <img src="books/ff01images/ff01_page-0071.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">319</button>
+    </div>
+    <div id="171" class="page">
+        <img src="books/ff01images/ff01_page-0071.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">337</button>
+        <button class="otherPage">187</button>
+    </div>
+    <div id="172" class="page">
+        <img src="books/ff01images/ff01_page-0071.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">249</button>
+        <button class="otherPage">141</button>
+        <button class="otherPage">165</button>
+    </div>
+    <div id="173" class="page">
+        <img src="books/ff01images/ff01_page-0071.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage unlucky">24</button>
+        <button class="otherPage win">135</button>
+        <button class="otherPage escape">360</button>
+    </div>
+    <div id="174" class="page">
+        <img src="books/ff01images/ff01_page-0072.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">198</button>
+    </div>
+    <div id="175" class="page">
+        <img src="books/ff01images/ff01_page-0072.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">177</button>
+        <button class="otherPage">267</button>
+    </div>
+    <div id="176" class="page">
+        <img src="books/ff01images/ff01_page-0072.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">270</button>
+        <button class="otherPage">375</button>
+    </div>
+    <div id="177" class="page">
+        <img src="books/ff01images/ff01_page-0072.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">52</button>
+        <button class="otherPage">391</button>
+        <button class="otherPage">175</button>
+    </div>
+    <div id="178" class="page">
+        <img src="books/ff01images/ff01_page-0072.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">162</button>
+    </div>
+    <div id="179" class="page">
+        <img src="books/ff01images/ff01_page-0073.jpg">
+        <img src="books/ff01images/ff01_page-0074.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage escape">54</button>
+        <button class="otherPage win">258</button>
+    </div>
+    <div id="180" class="page">
+        <img src="books/ff01images/ff01_page-0074.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">70</button>
+        <button class="otherPage">329</button>
+        <button class="otherPage">22</button>
+    </div>
+    <div id="181" class="page">
+        <img src="books/ff01images/ff01_page-0074.jpg">
+        <img src="books/ff01images/ff01_page-0075.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">355</button>
+        <button class="otherPage">265</button>
+    </div>
+    <div id="182" class="page">
+        <img src="books/ff01images/ff01_page-0075.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">139</button>
+    </div>
+    <div id="183" class="page">
+        <img src="books/ff01images/ff01_page-0075.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">266</button>
+        <button class="otherPage">237</button>
+    </div>
+    <div id="184" class="page">
+        <img src="books/ff01images/ff01_page-0075.jpg">
+        <img src="books/ff01images/ff01_page-0076.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">322</button>
+        <button class="otherPage">34</button>
+    </div>
+    <div id="185" class="page">
+        <img src="books/ff01images/ff01_page-0076.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">162</button>
+    </div>
+    <div id="186" class="page">
+        <img src="books/ff01images/ff01_page-0076.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">198</button>
+    </div>
+    <div id="187" class="page">
+        <img src="books/ff01images/ff01_page-0076.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">171</button>
+        <button class="otherPage">308</button>
+    </div>
+    <div id="188" class="page">
+        <img src="books/ff01images/ff01_page-0076.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">342</button>
+        <button class="otherPage escape">209</button>
+    </div>
+    <div id="189" class="page">
+        <img src="books/ff01images/ff01_page-0077.jpg">
+        <img src="books/ff01images/ff01_page-0078.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">90</button>
+        <button class="otherPage">25</button>
+    </div>
+    <div id="190" class="page">
+        <img src="books/ff01images/ff01_page-0078.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">167</button>
+        <button class="otherPage">359</button>
+    </div>
+    <div id="191" class="page">
+        <img src="books/ff01images/ff01_page-0078.jpg">
+        <img src="books/ff01images/ff01_page-0080.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">308</button>
+        <button class="otherPage">392</button>
+        <button class="otherPage">46</button>
+    </div>
+    <div id="192" class="page">
+        <img src="books/ff01images/ff01_page-0080.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">169</button>
+    </div>
+    <div id="193" class="page">
+        <img src="books/ff01images/ff01_page-0079.jpg">
+        <img src="books/ff01images/ff01_page-0080.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">93</button>
+        <button class="otherPage">338</button>
+    </div>
+    <div id="194" class="page">
+        <img src="books/ff01images/ff01_page-0080.jpg">
+        <img src="books/ff01images/ff01_page-0081.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">142</button>
+        <button class="otherPage">105</button>
+    </div>
+    <div id="195" class="page">
+        <img src="books/ff01images/ff01_page-0081.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage unlucky">140</button>
+        <button class="otherPage lucky">164</button>
+        <button class="otherPage win">9</button>
+    </div>
+    <div id="196" class="page">
+        <img src="books/ff01images/ff01_page-0081.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">280</button>
+    </div>
+    <div id="197" class="page">
+        <img src="books/ff01images/ff01_page-0081.jpg">
+        <img src="books/ff01images/ff01_page-0082.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">48</button>
+        <button class="otherPage">295</button>
+    </div>
+    <div id="198" class="page">
+        <img src="books/ff01images/ff01_page-0082.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">139</button>
+    </div>
+    <div id="199" class="page">
+        <img src="books/ff01images/ff01_page-0082.jpg">
+        <img src="books/ff01images/ff01_page-0083.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">283</button>
+    </div>
+    <div id="200" class="page">
+        <img src="books/ff01images/ff01_page-0083.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">387</button>
+    </div>
+    <div id="201" class="page">
+        <img src="books/ff01images/ff01_page-0083.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useGold25" class="getItem">Take the 25 gold pieces</button>
+        <button id="usePotionOfInvisibility" class="getItem">Take Potion of Invisibility</button>
+        <button id="useGlove" class="getItem">Take Glove</button>
+        <button class="otherPage">293</button>
+    </div>
+    <div id="202" class="page">
+        <img src="books/ff01images/ff01_page-0084.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">87</button>
+    </div>
+    <div id="203" class="page">
+        <img src="books/ff01images/ff01_page-0084.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useBoatHouseKey" class="getItem">Take Boat House Key</button>
+        <button class="otherPage">38</button>
+        <button class="otherPage">66</button>
+    </div>
+    <div id="204" class="page">
+        <img src="books/ff01images/ff01_page-0084.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">130</button>
+        <button class="otherPage">280</button>
+        <button class="otherPage">377</button>
+    </div>
+    <div id="205" class="page">
+        <img src="books/ff01images/ff01a_page-0001.jpg">
+        <img src="books/ff01images/ff01a_page-0002.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">254</button>
+        <button class="otherPage">380</button>
+    </div>
+    <div id="206" class="page">
+        <img src="books/ff01images/ff01a_page-0002.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">284</button>
+        <button class="otherPage lucky">341</button>
+    </div>
+    <div id="207" class="page">
+        <img src="books/ff01images/ff01a_page-0002.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">83</button>
+        <button class="otherPage">154</button>
+    </div>
+    <div id="208" class="page">
+        <img src="books/ff01images/ff01a_page-0003.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">397</button>
+        <button class="otherPage">363</button>
+    </div>
+    <div id="209" class="page">
+        <img src="books/ff01images/ff01a_page-0003.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">158</button>
+        <button class="otherPage lucky">47</button>
+    </div>
+    <div id="210" class="page">
+        <img src="books/ff01images/ff01a_page-0003.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">225</button>
+        <button class="otherPage">357</button>
+    </div>    
+    <div id="211" class="page">
+        <img src="books/ff01images/ff01a_page-0003.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">173</button>
+        <button class="otherPage escape">360</button>
+    </div>
+    <div id="212" class="page">
+        <img src="books/ff01images/ff01a_page-0004.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">369</button>
+        <button class="otherPage">120</button>
+    </div>
+    <div id="213" class="page">
+        <img src="books/ff01images/ff01a_page-0004.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">36</button>
+        <button class="otherPage unlucky">314</button>
+    </div>
+    <div id="214" class="page">
+        <img src="books/ff01images/ff01a_page-0004.jpg">
+        <img src="books/ff01images/ff01a_page-0006.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">271</button>
+        <button class="otherPage">104</button>
+        <button class="otherPage">99</button>
+    </div>
+    <div id="215" class="page">
+        <img src="books/ff01images/ff01a_page-0006.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">142</button>
+        <button class="otherPage">105</button>
+    </div>
+    <div id="216" class="page">
+        <img src="books/ff01images/ff01a_page-0006.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">384</button>
+    </div>
+    <div id="217" class="page">
+        <img src="books/ff01images/ff01a_page-0006.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">118</button>
+    </div>
+    <div id="218" class="page">
+        <img src="books/ff01images/ff01a_page-0005.jpg">
+        <img src="books/ff01images/ff01a_page-0006.jpg">
+        <img src="books/ff01images/ff01a_page-0007.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">3</button>
+        <button class="otherPage">386</button>
+        <button class="otherPage">209</button>
+        <button class="otherPage">316</button>
+    </div>
+    <div id="219" class="page">
+        <img src="books/ff01images/ff01a_page-0007.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">182</button>
+    </div>
+    <div id="220" class="page">
+        <img src="books/ff01images/ff01a_page-0007.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">171</button>
+    </div>
+    <div id="221" class="page">
+        <img src="books/ff01images/ff01a_page-0007.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage page313ChosenItems" id="Armor">72</button>
+        <button class="otherPage page313ChosenItems" id="Wooden Shield">132</button>
+        <button class="otherPage page313ChosenItems" id="Steel Bladed Sword">27</button>
+        <button class="otherPage page313ChosenItems" id="8 Gold Pieces">110</button>
+        <button class="otherPage page313ChosenItems" id="Silver Crucifix">170</button>
+    </div>
+    <div id="222" class="page">
+        <img src="books/ff01images/ff01a_page-0008.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">85</button>
+    </div>
+    <div id="223" class="page">
+        <img src="books/ff01images/ff01a_page-0008.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">53</button>
+        <button class="otherPage">300</button>
+    </div>
+    <div id="224" class="page">
+        <img src="books/ff01images/ff01a_page-0008.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">118</button>
+    </div>
+    <div id="225" class="page">
+        <img src="books/ff01images/ff01a_page-0008.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">77</button>
+        <button class="otherPage">63</button>
+    </div>
+    <div id="226" class="page">
+        <img src="books/ff01images/ff01a_page-0008.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">267</button>
+    </div>
+    <div id="227" class="page">
+        <img src="books/ff01images/ff01a_page-0009.jpg">
+        <img src="books/ff01images/ff01a_page-0010.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">131</button>
+        <button class="otherPage">291</button>
+        <button class="otherPage">100</button>
+        <button class="otherPage">20</button>
+        <button class="otherPage win">291</button>
+    </div>
+    <div id="228" class="page">
+        <img src="books/ff01images/ff01a_page-0010.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">85</button>
+    </div>
+    <div id="229" class="page">
+        <img src="books/ff01images/ff01a_page-0011.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">69</button>
+    </div>
+    <div id="230" class="page">
+        <img src="books/ff01images/ff01a_page-0011.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">390</button>
+        <button class="otherPage lucky">64</button>
+    </div>
+    <div id="231" class="page">
+        <img src="books/ff01images/ff01a_page-0011.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">182</button>
+    </div>
+    <div id="232" class="page">
+        <img src="books/ff01images/ff01a_page-0011.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">375</button>
+    </div>
+    <div id="233" class="page">
+        <img src="books/ff01images/ff01a_page-0012.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">198</button>
+    </div>
+    <div id="234" class="page">
+        <img src="books/ff01images/ff01a_page-0012.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">161</button>
+        <button class="otherPage win">43</button>
+    </div>
+    <div id="235" class="page">
+        <img src="books/ff01images/ff01a_page-0012.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">176</button>
+        <button class="otherPage">5</button>
+    </div>
+    <div id="236" class="page">
+        <img src="books/ff01images/ff01a_page-0012.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">395</button>
+    </div>
+    <div id="237" class="page">
+        <img src="books/ff01images/ff01a_page-0014.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">285</button>
+    </div>
+    <div id="238" class="page">
+        <img src="books/ff01images/ff01a_page-0014.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">70</button>
+        <button class="otherPage">180</button>
+        <button class="otherPage">329</button>
+    </div>
+    <div id="239" class="page">
+        <img src="books/ff01images/ff01a_page-0014.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">88</button>
+        <button class="otherPage">149</button>
+    </div>
+    <div id="240" class="page">
+        <img src="books/ff01images/ff01a_page-0013.jpg">
+        <img src="books/ff01images/ff01a_page-0014.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">145</button>
+    </div>
+    <div id="241" class="page">
+        <img src="books/ff01images/ff01a_page-0015.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">90</button>
+    </div>
+    <div id="242" class="page">
+        <img src="books/ff01images/ff01a_page-0015.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">379</button>
+        <button class="otherPage">139</button>
+    </div>
+    <div id="243" class="page">
+        <img src="books/ff01images/ff01a_page-0015.jpg">
+        <img src="books/ff01images/ff01a_page-0016.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">128</button>
+    </div>
+    <div id="244" class="page">
+        <img src="books/ff01images/ff01a_page-0016.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">143</button>
+        <button class="otherPage">399</button>
+    </div>
+    <div id="245" class="page">
+        <img src="books/ff01images/ff01a_page-0017.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">198</button>
+    </div>
+    <div id="246" class="page">
+        <img src="books/ff01images/ff01a_page-0017.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">329</button>
+        <button class="otherPage">180</button>
+        <button class="otherPage">70</button>
+    </div>
+    <div id="247" class="page">
+        <img src="books/ff01images/ff01a_page-0017.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">292</button>
+    </div>
+    <div id="248" class="page">
+        <img src="books/ff01images/ff01a_page-0017.jpg">
+        <img src="books/ff01images/ff01a_page-0018.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">301</button>
+    </div>
+    <div id="249" class="page">
+        <img src="books/ff01images/ff01a_page-0018.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage escape">66</button>
+        <button class="otherPage win">304</button>
+    </div>
+    <div id="250" class="page">
+        <img src="books/ff01images/ff01a_page-0018.jpg">
+        <img src="books/ff01images/ff01a_page-0020.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">366</button>
+    </div>
+    <div id="251" class="page">
+        <img src="books/ff01images/ff01a_page-0019.jpg">
+        <img src="books/ff01images/ff01a_page-0020.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">344</button>
+        <button class="otherPage escape">399</button>
+    </div>
+    <div id="252" class="page">
+        <img src="books/ff01images/ff01a_page-0020.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">312</button>
+        <button class="otherPage">226</button>
+    </div>
+    <div id="253" class="page">
+        <img src="books/ff01images/ff01a_page-0020.jpg">
+        <img src="books/ff01images/ff01a_page-0021.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">328</button>
+        <button class="otherPage">125</button>
+        <button class="otherPage">73</button>
+    </div>
+    <div id="254" class="page">
+        <img src="books/ff01images/ff01a_page-0021.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">352</button>
+        <button class="otherPage">333</button>
+        <button class="otherPage">279</button>
+        <button class="otherPage">380</button>
+    </div>
+    <div id="255" class="page">
+        <img src="books/ff01images/ff01a_page-0021.jpg">
+        <img src="books/ff01images/ff01a_page-0022.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">193</button>
+        <button class="otherPage">93</button>
+    </div>
+    <div id="256" class="page">
+        <img src="books/ff01images/ff01a_page-0022.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">398</button>
+        <button class="otherPage">297</button>
+        <button class="otherPage">114</button>
+    </div>
+    <div id="257" class="page">
+        <img src="books/ff01images/ff01a_page-0022.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">168</button>
+        <button class="otherPage">293</button>
+    </div>
+    <div id="258" class="page">
+        <img src="books/ff01images/ff01a_page-0022.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useGold8" class="getItem">Take the 8 gold pieces</button>
+        <button id="useSecondKey111" class="getItem">Take the Key 111</button>
+        <button class="otherPage">54</button>
+    </div>
+    <div id="259" class="page">
+        <img src="books/ff01images/ff01a_page-0023.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">7</button>
+    </div>
+    <div id="260" class="page">
+        <img src="books/ff01images/ff01a_page-0023.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">359</button>
+        <button class="otherPage">329</button>
+    </div>
+    <div id="261" class="page">
+        <img src="books/ff01images/ff01a_page-0023.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">345</button>
+    </div>
+    <div id="262" class="page">
+        <img src="books/ff01images/ff01a_page-0023.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">199</button>
+        <button class="otherPage">251</button>
+    </div>
+    <div id="263" class="page">
+        <img src="books/ff01images/ff01a_page-0023.jpg">
+        <img src="books/ff01images/ff01a_page-0024.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">314</button>
+    </div>
+    <div id="264" class="page">
+        <img src="books/ff01images/ff01a_page-0024.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">80</button>
+        <button class="otherPage unlucky">129</button>
+    </div>
+    <div id="265" class="page">
+        <img src="books/ff01images/ff01a_page-0026.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">88</button>
+    </div>
+    <div id="266" class="page">
+        <img src="books/ff01images/ff01a_page-0025.jpg">
+        <img src="books/ff01images/ff01a_page-0026.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">237</button>
+    </div>
+    <div id="267" class="page">
+        <img src="books/ff01images/ff01a_page-0026.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">312</button>
+        <button class="otherPage">246</button>
+        <button class="otherPage">79</button>
+        <button class="otherPage">349</button>
+    </div>
+    <div id="268" class="page">
+        <img src="books/ff01images/ff01a_page-0026.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">13</button>
+        <button class="otherPage">282</button>
+    </div>
+    <div id="269" class="page">
+        <img src="books/ff01images/ff01a_page-0027.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">225</button>
+    </div>
+    <div id="270" class="page">
+        <img src="books/ff01images/ff01a_page-0027.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">61</button>
+        <button class="otherPage">394</button>
+        <button class="otherPage">375</button>
+    </div>
+    <div id="271" class="page">
+        <img src="books/ff01images/ff01a_page-0027.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">336</button>
+        <button class="otherPage">214</button>
+    </div>
+    <div id="272" class="page">
+        <img src="books/ff01images/ff01a_page-0027.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">7</button>
+    </div>
+    <div id="273" class="page">
+        <img src="books/ff01images/ff01a_page-0027.jpg">
+        <img src="books/ff01images/ff01a_page-0028.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useWoodStumps" class="getItem">Take Mallet and Stumps of wood</button>
+        <button class="otherPage">189</button>
+    </div>
+    <div id="274" class="page">
+        <img src="books/ff01images/ff01a_page-0028.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">324</button>
+        <button class="otherPage">356</button>
+        <button class="otherPage">98</button>
+    </div>
+    <div id="275" class="page">
+        <img src="books/ff01images/ff01a_page-0029.jpg">
+        <img src="books/ff01images/ff01a_page-0030.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">230</button>
+    </div>
+    <div id="276" class="page">
+        <img src="books/ff01images/ff01a_page-0030.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">182</button>
+    </div>
+    <div id="277" class="page">
+        <img src="books/ff01images/ff01a_page-0030.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">146</button>
+        <button class="otherPage">366</button>
+        <button class="otherPage">11</button>
+    </div>
+    <div id="278" class="page">
+        <img src="books/ff01images/ff01a_page-0030.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">156</button>
+        <button class="otherPage">92</button>
+    </div>
+    <div id="279" class="page">
+        <img src="books/ff01images/ff01a_page-0030.jpg">
+        <img src="books/ff01images/ff01a_page-0031.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage unlucky">380</button>
+        <button class="otherPage win">17</button>
+        <button class="otherPage lucky">333</button>
+    </div>
+    <div id="280" class="page">
+        <img src="books/ff01images/ff01a_page-0031.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">311</button>
+    </div>
+    <div id="281" class="page">
+        <img src="books/ff01images/ff01a_page-0031.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">10</button>
+    </div>
+    <div id="282" class="page">
+        <img src="books/ff01images/ff01a_page-0031.jpg">
+        <img src="books/ff01images/ff01a_page-0032.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">115</button>
+    </div>
+    <div id="283" class="page">
+        <img src="books/ff01images/ff01a_page-0032.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">251</button>
+    </div>
+    <div id="284" class="page">
+        <img src="books/ff01images/ff01a_page-0032.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">46</button>
+        <button class="otherPage">392</button>
+    </div>
+    <div id="285" class="page">
+        <img src="books/ff01images/ff01a_page-0032.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">213</button>
+        <button class="otherPage">314</button>
+    </div>
+    <div id="286" class="page">
+        <img src="books/ff01images/ff01a_page-0034.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">294</button>
+        <button class="otherPage">275</button>
+        <button class="otherPage">148</button>
+        <button class="otherPage">107</button>
+    </div>
+    <div id="287" class="page">
+        <img src="books/ff01images/ff01a_page-0033.jpg">
+        <img src="books/ff01images/ff01a_page-0034.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">32</button>
+        <button class="otherPage lucky">309</button>
+    </div>
+    <div id="288" class="page">
+        <img src="books/ff01images/ff01a_page-0035.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">182</button>
+    </div>
+    <div id="289" class="page">
+        <img src="books/ff01images/ff01a_page-0035.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">396</button>
+    </div>
+    <div id="290" class="page">
+        <img src="books/ff01images/ff01a_page-0035.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">198</button>
+    </div>
+    <div id="291" class="page">
+        <img src="books/ff01images/ff01a_page-0036.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">315</button>
+        <button class="otherPage">52</button>
+        <button class="otherPage">227</button>
+    </div>
+    <div id="292" class="page">
+        <img src="books/ff01images/ff01a_page-0036.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">239</button>
+        <button class="otherPage lucky">40</button>
+    </div>
+    <div id="293" class="page">
+        <img src="books/ff01images/ff01a_page-0036.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">113</button>
+    </div>
+    <div id="294" class="page">
+        <img src="books/ff01images/ff01a_page-0036.jpg">
+        <img src="books/ff01images/ff01a_page-0037.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">275</button>
+        <button class="otherPage">148</button>
+        <button class="otherPage">107</button>
+    </div>
+    <div id="295" class="page">
+        <img src="books/ff01images/ff01a_page-0037.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">161</button>
+        <button class="otherPage win">48</button>
+    </div>
+    <div id="296" class="page">
+        <img src="books/ff01images/ff01a_page-0037.jpg">
+        <img src="books/ff01images/ff01a_page-0038.jpg">
+        <img src="books/ff01images/ff01a_page-0039.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">42</button>
+    </div>
+    <div id="297" class="page">
+        <img src="books/ff01images/ff01a_page-0039.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">150</button>
+        <button class="otherPage">256</button>
+    </div>
+    <div id="298" class="page">
+        <img src="books/ff01images/ff01a_page-0039.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">86</button>
+        <button class="otherPage lucky">7</button>
+    </div>
+    <div id="299" class="page">
+        <img src="books/ff01images/ff01a_page-0040.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">260</button>
+        <button class="otherPage">359</button>
+    </div>
+    <div id="300" class="page">
+        <img src="books/ff01images/ff01a_page-0040.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">102</button>
+        <button class="otherPage">303</button>
+    </div>
+    <div id="301" class="page">
+        <img src="books/ff01images/ff01a_page-0040.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">82</button>
+        <button class="otherPage">208</button>
+    </div>
+    <div id="302" class="page">
+        <img src="books/ff01images/ff01a_page-0042.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">198</button>
+    </div>
+    <div id="303" class="page">
+        <img src="books/ff01images/ff01a_page-0041.jpg">
+        <img src="books/ff01images/ff01a_page-0042.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">128</button>
+        <button class="otherPage">243</button>
+    </div>
+    <div id="304" class="page">
+        <img src="books/ff01images/ff01a_page-0042.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage escape">66</button>
+        <button class="otherPage win">203</button>
+    </div>
+    <div id="305" class="page">
+        <img src="books/ff01images/ff01a_page-0043.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">162</button>
+        <button class="otherPage unlucky">108</button>
+    </div>
+    <div id="306" class="page">
+        <img src="books/ff01images/ff01a_page-0043.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">161</button>
+        <button class="otherPage win">291</button>
+    </div>
+    <div id="307" class="page">
+        <img src="books/ff01images/ff01a_page-0043.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">134</button>
+        <button class="otherPage">87</button>
+    </div>
+    <div id="308" class="page">
+        <img src="books/ff01images/ff01a_page-0043.jpg">
+        <img src="books/ff01images/ff01a_page-0044.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">187</button>
+        <button class="otherPage">54</button>
+        <button class="otherPage">160</button>
+        <button class="otherPage">354</button>
+    </div>
+    <div id="309" class="page">
+        <img src="books/ff01images/ff01a_page-0044.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">124</button>
+    </div>
+    <div id="310" class="page">
+        <img src="books/ff01images/ff01a_page-0044.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">211</button>
+    </div>    
+    <div id="311" class="page">
+        <img src="books/ff01images/ff01a_page-0045.jpg">
+        <img src="books/ff01images/ff01a_page-0046.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">305</button>
+        <button class="otherPage">178</button>
+        <button class="otherPage">108</button>
+    </div>
+    <div id="312" class="page">
+        <img src="books/ff01images/ff01a_page-0046.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">308</button>
+    </div>
+    <div id="313" class="page">
+        <img src="books/ff01images/ff01a_page-0046.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="page313Items" name="Armor">Take Armor</button>
+        <br>
+        <button class="page313Items" name="Wooden Shield">Take Wooden Shield</button>
+        <br>
+        <button class="page313Items" name="Steel Bladed Sword">Take Steel Bladed Sword</button>
+        <br>
+        <button class="page313Items" name="8 Gold Pieces">Take 8 Gold Pieces</button>
+        <br>
+        <button class="page313Items" name="Silver Crucifix">Take Silver Crucifix</button>
+        <button class="otherPage">221</button>
+    </div>
+    <div id="314" class="page">
+        <img src="books/ff01images/ff01a_page-0047.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">223</button>
+        <button class="otherPage">300</button>
+    </div>
+    <div id="315" class="page">
+        <img src="books/ff01images/ff01a_page-0047.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">306</button>
+        <button class="otherPage">291</button>
+    </div>
+    <div id="316" class="page">
+        <img src="books/ff01images/ff01a_page-0047.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">151</button>
+        <button class="otherPage lucky">218</button>
+    </div>
+    <div id="317" class="page">
+        <img src="books/ff01images/ff01a_page-0047.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useCheese" class="getItem">Take the Cheese</button>
+        <button class="otherPage">303</button>
+    </div>
+    <div id="318" class="page">
+        <img src="books/ff01images/ff01a_page-0048.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">85</button>
+        <button class="otherPage">228</button>
+    </div>
+    <div id="319" class="page">
+        <img src="books/ff01images/ff01a_page-0048.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">221</button>
+        <button class="otherPage win">81</button>
+    </div>
+    <div id="320" class="page">
+        <img src="books/ff01images/ff01a_page-0048.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">363</button>
+    </div>
+    <div id="321" class="page">
+        <img src="books/ff01images/ff01a_page-0048.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">169</button>
+    </div>
+    <div id="322" class="page">
+        <img src="books/ff01images/ff01a_page-0048.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useCopperKey66" class="getItem">Take Copper Key 66</button>
+        <button class="otherPage">96</button>
+    </div>
+    <div id="323" class="page">
+        <img src="books/ff01images/ff01a_page-0048.jpg">
+        <img src="books/ff01images/ff01a_page-0050.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">8</button>
+        <button class="otherPage">255</button>
+    </div>
+    <div id="324" class="page">
+        <img src="books/ff01images/ff01a_page-0050.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">358</button>
+    </div>
+    <div id="325" class="page">
+        <img src="books/ff01images/ff01a_page-0050.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">87</button>
+    </div>
+    <div id="326" class="page">
+        <img src="books/ff01images/ff01a_page-0049.jpg">
+        <img src="books/ff01images/ff01a_page-0050.jpg">
+        <img src="books/ff01images/ff01a_page-0051.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">35</button>
+        <button class="otherPage">229</button>
+    </div>
+    <div id="327" class="page">
+        <img src="books/ff01images/ff01a_page-0051.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useGold30BookYShapedStick" class="getItem">Take the 30 gold pieces, Book and Y-shaped Stick</button>
+        <button class="otherPage">380</button>
+    </div>
+    <div id="328" class="page">
+        <img src="books/ff01images/ff01a_page-0051.jpg">
+        <img src="books/ff01images/ff01a_page-0052.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useYShapedStick" class="getItem">Take the Y-shaped Stick</button>
+        <button class="otherPage">73</button>
+        <button class="otherPage">125</button>
+    </div>
+    <div id="329" class="page">
+        <img src="books/ff01images/ff01a_page-0052.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">157</button>
+        <button class="otherPage">392</button>
+        <button class="otherPage">299</button>
+        <button class="otherPage">238</button>
+    </div>
+    <div id="330" class="page">
+        <img src="books/ff01images/ff01a_page-0052.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">81</button>
+    </div>
+    <div id="331" class="page">
+        <img src="books/ff01images/ff01a_page-0052.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">287</button>
+    </div>
+    <div id="332" class="page">
+        <img src="books/ff01images/ff01a_page-0053.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">329</button>
+        <button class="otherPage">4</button>
+    </div>
+    <div id="333" class="page">
+        <img src="books/ff01images/ff01a_page-0053.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">327</button>
+        <button class="otherPage escape">380</button>
+        <button class="otherPage unlucky">224</button>
+    </div>
+    <div id="334" class="page">
+        <img src="books/ff01images/ff01a_page-0054.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useBlueCandle" class="getItem">Buy the Blue Candle</button>
+        <button class="otherPage">292</button>
+    </div>
+    <div id="335" class="page">
+        <img src="books/ff01images/ff01a_page-0056.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">182</button>
+    </div>
+    <div id="336" class="page">
+        <img src="books/ff01images/ff01a_page-0055.jpg">
+        <img src="books/ff01images/ff01a_page-0056.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">66</button>
+        <button class="otherPage">172</button>
+        <button class="otherPage">249</button>
+    </div>
+    <div id="337" class="page">
+        <img src="books/ff01images/ff01a_page-0056.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">267</button>
+    </div>
+    <div id="338" class="page">
+        <img src="books/ff01images/ff01a_page-0056.jpg">
+        <img src="books/ff01images/ff01a_page-0057.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">75</button>
+        <button class="otherPage escape">93</button>
+    </div>
+    <div id="339" class="page">
+        <img src="books/ff01images/ff01a_page-0057.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">201</button>
+    </div>
+    <div id="340" class="page">
+        <img src="books/ff01images/ff01a_page-0058.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="hasSwordOrEnchantedSwordPage340" class="otherPage">388</button>
+        <button id="hasEyeOfTheCyclopsPage340" class="otherPage">31</button>
+        <button id="hasWoodStumpsPage340" class="otherPage">241</button>
+        <button id="hasCheesePage340" class="otherPage">45</button>
+    </div>
+    <div id="341" class="page">
+        <img src="books/ff01images/ff01a_page-0058.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">46</button>
+        <button class="otherPage">392</button>
+        <button class="otherPage">220</button>
+        <button class="otherPage">191</button>
+    </div>
+    <div id="342" class="page">
+        <img src="books/ff01images/ff01a_page-0058.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">7</button>
+    </div>
+    <div id="343" class="page">
+        <img src="books/ff01images/ff01a_page-0058.jpg">
+        <img src="books/ff01images/ff01a_page-0059.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">92</button>
+    </div>
+    <div id="344" class="page">
+        <img src="books/ff01images/ff01a_page-0059.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">56</button>
+        <button class="otherPage">153</button>
+    </div>
+    <div id="345" class="page">
+        <img src="books/ff01images/ff01a_page-0059.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">381</button>
+        <button class="otherPage">311</button>
+    </div>
+    <div id="346" class="page">
+        <img src="books/ff01images/ff01a_page-0060.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">131</button>
+    </div>
+    <div id="347" class="page">
+        <img src="books/ff01images/ff01a_page-0060.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">182</button>
+    </div>
+    <div id="348" class="page">
+        <img src="books/ff01images/ff01a_page-0061.jpg">
+        <img src="books/ff01images/ff01a_page-0062.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">331</button>
+        <button class="otherPage win">51</button>
+    </div>
+    <div id="349" class="page">
+        <img src="books/ff01images/ff01a_page-0062.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">267</button>
+        <button class="otherPage">30</button>
+    </div>
+    <div id="350" class="page">
+        <img src="books/ff01images/ff01a_page-0062.jpg">
+        <img src="books/ff01images/ff01a_page-0063.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">7</button>
+    </div>
+    <div id="351" class="page">
+        <img src="books/ff01images/ff01a_page-0063.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">76</button>
+    </div>
+    <div id="352" class="page">
+        <img src="books/ff01images/ff01a_page-0063.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">74</button>
+        <button class="otherPage">279</button>
+    </div>
+    <div id="353" class="page">
+        <img src="books/ff01images/ff01a_page-0063.jpg">
+        <img src="books/ff01images/ff01a_page-0064.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">314</button>
+    </div>
+    <div id="354" class="page">
+        <img src="books/ff01images/ff01a_page-0064.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">308</button>
+        <button class="otherPage">52</button>
+        <button class="otherPage">14</button>
+        <button class="otherPage">234</button>
+    </div>
+    <div id="355" class="page">
+        <img src="books/ff01images/ff01a_page-0064.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">181</button>
+        <button class="otherPage">265</button>
+    </div>
+    <div id="356" class="page">
+        <img src="books/ff01images/ff01a_page-0064.jpg">
+        <img src="books/ff01images/ff01a_page-0066.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">358</button>
+    </div>
+    <div id="357" class="page">
+        <img src="books/ff01images/ff01a_page-0066.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">269</button>
+        <button class="otherPage">57</button>
+    </div>
+    <div id="358" class="page">
+        <img src="books/ff01images/ff01a_page-0065.jpg">
+        <img src="books/ff01images/ff01a_page-0066.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">142</button>
+        <button class="otherPage">105</button>
+        <button class="otherPage">389</button>
+    </div>
+    <div id="359" class="page">
+        <img src="books/ff01images/ff01a_page-0067.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">190</button>
+        <button class="otherPage">94</button>
+        <button class="otherPage">121</button>
+        <button class="otherPage">385</button>
+    </div>
+    <div id="360" class="page">
+        <img src="books/ff01images/ff01a_page-0067.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">89</button>
+    </div>
+    <div id="361" class="page">
+        <img src="books/ff01images/ff01a_page-0067.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">136</button>
+    </div>
+    <div id="362" class="page">
+        <img src="books/ff01images/ff01a_page-0067.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">177</button>
+    </div>
+    <div id="363" class="page">
+        <img src="books/ff01images/ff01a_page-0067.jpg">
+        <img src="books/ff01images/ff01a_page-0068.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">370</button>
+        <button class="otherPage">42</button>
+    </div>
+    <div id="364" class="page">
+        <img src="books/ff01images/ff01a_page-0068.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">256</button>
+        <button class="otherPage">373</button>
+    </div>
+    <div id="365" class="page">
+        <img src="books/ff01images/ff01a_page-0068.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">183</button>
+        <button class="otherPage escape">237</button>
+    </div>
+    <div id="366" class="page">
+        <img src="books/ff01images/ff01a_page-0068.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">89</button>
+        <button class="otherPage">62</button>
+    </div>
+    <div id="367" class="page">
+        <img src="books/ff01images/ff01a_page-0070.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">235</button>
+        <button class="otherPage">323</button>
+    </div>
+    <div id="368" class="page">
+        <img src="books/ff01images/ff01a_page-0070.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">142</button>
+        <button class="otherPage">105</button>
+    </div>
+    <div id="369" class="page">
+        <img src="books/ff01images/ff01a_page-0070.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">109</button>
+    </div>
+    <div id="370" class="page">
+        <img src="books/ff01images/ff01a_page-0069.jpg">
+        <img src="books/ff01images/ff01a_page-0070.jpg">
+        <img src="books/ff01images/ff01a_page-0071.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">116</button>
+        <button class="otherPage">42</button>
+    </div>
+    <div id="371" class="page">
+        <img src="books/ff01images/ff01a_page-0071.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">274</button>
+    </div>
+    <div id="372" class="page">
+        <img src="books/ff01images/ff01a_page-0071.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">21</button>
+    </div>
+    <div id="373" class="page">
+        <img src="books/ff01images/ff01a_page-0071.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">85</button>
+    </div>
+    <div id="374" class="page">
+        <img src="books/ff01images/ff01a_page-0071.jpg">
+        <img src="books/ff01images/ff01a_page-0072.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">207</button>
+    </div>
+    <div id="375" class="page">
+        <img src="books/ff01images/ff01a_page-0072.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">5</button>
+    </div>
+    <div id="376" class="page">
+        <img src="books/ff01images/ff01a_page-0072.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useCopperPieces" class="getItem">Take the Copper Pieces</button>
+        <button class="otherPage">291</button>
+    </div>
+    <div id="377" class="page">
+        <img src="books/ff01images/ff01a_page-0072.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">196</button>
+    </div>
+    <div id="378" class="page">
+        <img src="books/ff01images/ff01a_page-0072.jpg">
+        <img src="books/ff01images/ff01a_page-0073.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">296</button>
+        <button class="otherPage">42</button>
+    </div>
+    <div id="379" class="page">
+        <img src="books/ff01images/ff01a_page-0073.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">139</button>
+    </div>
+    <div id="380" class="page">
+        <img src="books/ff01images/ff01a_page-0073.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">37</button>
+    </div>
+    <div id="381" class="page">
+        <img src="books/ff01images/ff01a_page-0074.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">84</button>
+        <button class="otherPage">280</button>
+    </div>
+    <div id="382" class="page">
+        <img src="books/ff01images/ff01a_page-0074.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">396</button>
+    </div>
+    <div id="383" class="page">
+        <img src="books/ff01images/ff01a_page-0075.jpg">
+        <img src="books/ff01images/ff01a_page-0076.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage win">80</button>
+        <button class="otherPage">264</button>
+        <button class="otherPage">129</button>
+    </div>
+    <div id="384" class="page">
+        <img src="books/ff01images/ff01a_page-0076.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">262</button>
+        <button class="otherPage">307</button>
+    </div>
+    <div id="385" class="page">
+        <img src="books/ff01images/ff01a_page-0076.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">114</button>
+        <button class="otherPage">297</button>
+        <button class="otherPage">398</button>
+    </div>
+    <div id="386" class="page">
+        <img src="books/ff01images/ff01a_page-0076.jpg">
+        <img src="books/ff01images/ff01a_page-0077.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">55</button>
+        <button class="otherPage">166</button>
+    </div>
+    <div id="387" class="page">
+        <img src="books/ff01images/ff01a_page-0077.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <text>You are dead</text>
+    </div>
+    <div id="388" class="page">
+        <img src="books/ff01images/ff01a_page-0077.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">90</button>
+    </div>
+    <div id="389" class="page">
+        <img src="books/ff01images/ff01a_page-0077.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage lucky">289</button>
+        <button class="otherPage unlucky">112</button>
+    </div>
+    <div id="390" class="page">
+        <img src="books/ff01images/ff01a_page-0077.jpg">
+        <img src="books/ff01images/ff01a_page-0078.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button id="useEarrings" class="getItem">Take the Earrings</button>
+        <button id="useGold5" class="getItem">Take the 5 gold pieces</button>
+        <button class="otherPage">120</button>
+        <button class="otherPage">393</button>
+    </div>
+    <div id="391" class="page">
+        <img src="books/ff01images/ff01a_page-0078.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">52</button>
+        <button class="otherPage">362</button>
+        <button class="otherPage">48</button>
+    </div>
+    <div id="392" class="page">
+        <img src="books/ff01images/ff01a_page-0078.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">206</button>
+        <button class="otherPage">329</button>
+    </div>
+    <div id="393" class="page">
+        <img src="books/ff01images/ff01a_page-0078.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">212</button>
+        <button class="otherPage">369</button>
+    </div>
+    <div id="394" class="page">
+        <img src="books/ff01images/ff01a_page-0079.jpg">
+        <img src="books/ff01images/ff01a_page-0080.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">232</button>
+    </div>
+    <div id="395" class="page">
+        <img src="books/ff01images/ff01a_page-0080.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">322</button>
+        <button class="otherPage">34</button>
+    </div>
+    <div id="396" class="page">
+        <img src="books/ff01images/ff01a_page-0081.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">242</button>
+    </div>
+    <div id="397" class="page">
+        <img src="books/ff01images/ff01a_page-0081.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">240</button>
+        <button class="otherPage">363</button>
+    </div>
+    <div id="398" class="page">
+        <img src="books/ff01images/ff01a_page-0081.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">364</button>
+        <button class="otherPage">12</button>
+    </div>
+    <div id="399" class="page">
+        <img src="books/ff01images/ff01a_page-0081.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <button class="otherPage">218</button>
+    </div>
+    <div id="400" class="page">
+        <img src="books/ff01images/ff01a_page-0082.jpg">
+        <img src="books/ff01images/ff01a_page-0083.jpg">
+        <img src="books/ff01images/ff01a_page-0084.jpg">
+        <h4 class="pageNum"></h4>
+        <br>
+        <text>Congratulations adventurer</text>
+    </div>
+
+    <!-- test luck hidden until page requests it---------------------------------->
+    <button id="testLuck">Test luck</button>
+    <p id="ingameText"></p>
+
+    <!-- roll die or dice ---------------------------------->
+    <div id="roll">
+        <button id="rolldie">Roll 1 die</button>
+        <button id="rolldice">Roll 2 dice</button>
+    </div>
+    
+    <!-- fight mechanic --------------------------------->
+    <div id="fightMechanic">
+        <!-- cresent shield roll die and effect -->
+        <div id="cresentShieldDisplay" style="display: none;">
+            <button id="cresentShieldRollButton">Roll die for cresent shield effect</button>
+            <p id="cresentShieldText"></p>
+        </div>
+        
+        <!-- to fight enemies together -->
+        <select id="chooseEnemy" style="display: none;">
+            <option selected disabled>Choose Enemy to attack</option>
+        </select>
+        
+        <!-- enemy stats -->
+        <div id="allEnemies"></div>
+        
+        <!-- fight -->
+        <button id="fight">Fight</button>
+        
+        <!-- use luck in battle -->
+        <button id="useLuck">Use luck</button>
+        <p id="battleText"></p>   
+    </div>
+    
+    <!-- use provisions hidden until can use -->
+    <button id="useProvisions">You can use provisions now</button>
+    
+    <!-- save game progress -------------------------------->
+    <hr>
+    <text>Refresh or click Load save to load latest save file</text>
+    <br>
+    <button id="save">Save progress</button>
+    
+    <!-- load game progress --------------------------------->
+    <button id="load">Load save</button>
+
+    <!-- delete game progress --------------------------------->
+    <button id="deleteSave">Delete save file</button>
+    <br>
+    <br>
+    
+    <!-- stats----------------------------------->
+    <div id="stats">
+        <!-- Skill stat ---------------------------------->
+        <span>Skill Initial: </span>
+        <span id="initialSkill"></span>
+        <br>
+        <span>Current:</span>
+        <span id="skill"></span>
+        <br><br>
+
+        <!-- Stamina stat ---------------------------------->
+        <span>Stamina Initial: </span>
+        <span id="initialStamina"></span>
+        <br>
+        <span>Current:</span>
+        <span id="stamina"></span>
+        <br><br>
+        
+        <!-- Luck stat ---------------------------------->
+        <span>Luck Initial: </span>
+        <span id="initialLuck"></span>
+        <br>
+        <span>Current:</span>
+        <span id="luck"></span>
+        <br>
+    </div>
+
+    <br>
+    <span>Gold: </span> 
+    <span id="gold"></span>
+    <br><br>
+    
+    <span>Provisions: </span>
+    <span id="provisions"></span>
+    <br><br>
+
+    <div>Inventory: </div>
+    <span id="inventory">
+        <div>
+            <button id="sword">Sword</button>
+        </div>
+        <div>
+            <button id="leatherArmor">Leather Armor</button>
+        </div>
+        <div>
+            <button id="lantern">Lantern</button>
+        </div>
+        <div>
+            <button id="potionOfSkill">Potion of Skill x2 uses</button>
+        </div>
+        <div>
+            <button id="potionOfStrength">Potion of Strength x2 uses</button>
+        </div>
+        <div>
+            <button id="potionOfFortune">Potion of Fortune x2 uses</button>        
+        </div>
+        <div>
+            <button id="enchantedSword">Enchanted Sword</button>        
+        </div>
+        <div>
+            <button id="cheese">Cheese</button>        
+        </div>
+        <div>
+            <button id="woodMallet">Wood Mallet</button>        
+        </div>
+        <div>
+            <button id="silverChisel">Silver Chisel</button>        
+        </div>
+        <div>
+            <button id="theGiverOfSleep">The Giver of Sleep and Silver Arrow</button>        
+        </div>
+        <div>
+            <button class="key" name="9" id="bronzeKey9">Bronze Key 9</button>        
+        </div>
+        <div>
+            <button id="eyeOfTheCyclops">Eye of the Cyclops</button>        
+        </div>
+        <div>
+            <button class="key" name="111" id="key111">Key 111</button>        
+        </div>
+        <div>
+            <button id="potionOfInvisibility">Potion of Invisibility</button>        
+        </div>
+        <div>
+            <button id="yShapedStick">Y-shaped Stick</button>        
+        </div>
+        <div>
+            <button class="key" name="99" id="bronzeKey99">Bronze Key 99</button>        
+        </div>
+        <div>
+            <button id="cresentShield">Cresent Shield</button>        
+        </div>
+        <div>
+            <button id="glove">Glove</button>        
+        </div>
+        <div>
+            <button class="key" name="0" id="boatHouseKey">Boat House Key</button>        
+        </div>
+        <div>
+            <button id="mapParchment">Map Parchment</button>        
+        </div>
+        <div>
+            <button class="key" name="111" id="secondKey111">Key 111</button>        
+        </div>
+        <div>
+            <button id="woodStumps">Stumps of Wood</button>        
+        </div>
+        <div>
+            <button id="crucifix">Crucifix</button>        
+        </div>
+        <div>
+            <button id="blueCandle">Blue Candle</button>        
+        </div>
+        <div>
+            <button id="woodenShield">Wooden Shield</button>        
+        </div>
+        <div>
+            <button class="key" name="66" id="copperKey66">Copper Key 66</button>        
+        </div>
+        <div>
+            <button id="bronzeHelmet">Bronze Helmet</button>        
+        </div>
+        <div>
+            <button id="ironHelmet">Iron Helmet</button>        
+        </div>
+        <div>
+            <button id="book">Book</button>        
+        </div>
+        <div>
+            <button id="riverSword">River Sword</button>        
+        </div>
+        <div>
+            <button class="key" name="125" id="goldenKey125">Golden Key 125</button>        
+        </div>
+        <div>
+            <button id="copperPieces">Copper Pieces</button>        
+        </div>
+        <div>
+            <button id="earrings">Earrings</button>        
+        </div>
+    </span>
+    
+    <br>
+    <div>Notes</div>
+    <textarea rows="6" id="notes"></textarea>
+    
+</body>
+</html>

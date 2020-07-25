@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepare stats and items</title>
+    <script src="scripts/ff01Setup.js"></script>
+</head>
+<body>
+    <!-- instructions -------------------------------->
+    <h2>Few things to do before embarking on your journey..</h1>
+    <h3>1. Click roll initial stats until you're happy with the numbers (Hint: the higher the better)</h3>
+    <h3>2. Click starting potion</h3>
+    <h3>3. Click Start adventure when done</h3>
+   
+    <!-- initial stats--------------------------------->
+    <p>Initial Skill: Roll 1 die +6</p>
+    <span id="initialSkill"></span>
+    <!-- <input type="number" id="initialSkill" min="0"> -->
+    
+    <p>Initial Stamina: Roll 2 die +12</p>
+    <span id="initialStamina"></span>
+    <!-- <input type="number" id="initialStamina" min="0"> -->
+    
+    <p>Initial Luck: Roll 1 die +6</p>
+    <span id="initialLuck"></span>
+    <!-- <input type="number" id="initialLuck" min="0"> -->
+    
+    <!-- button to roll initial stats------------------->
+    <br>
+    <button id="rollInitial">Roll initial stats</button>
+
+    <!-- choose starting potion---------------------------->
+    <h4>Choose 1 of the 3 starting potions, each potion has 2 doses and can be taken anytime</h4>
+    <p>Potion of Skill - restores skill points to initial value</p>
+    <p>Potion of Strength - restores stamina points to initial value</p>
+    <p>Potion of Fortune - increase initial luck score by 1 and restores luck to new inital value</p>
+    <!-- potion drop down list -->
+    <select id="potion">
+        <option selected disabled>Choose potion</option>
+        <option value="potionOfSkill">Potion of Skill</option>
+        <option value="potionOfStrength">Potion of Strength</option>
+        <option value="potionOfFortune">Potion of Fortune</option>
+    </select>
+    <br><br>
+    
+    <!-- provisions & inventory but hidden---------------- ------------>
+    <span id="provisions"></span>
+    
+    <!-- button to start game-->
+    <button id="startAdventure">Start adventure!</button>
+</body>
+</html>
