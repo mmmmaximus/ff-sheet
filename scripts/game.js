@@ -2,7 +2,7 @@ import { skill,stamina,luck,initialSkill,initialStamina,initialLuck,provisions,n
 rolldie,rolldice,fightMechanic,enemyName,enemySkill,enemyStamina,useLuckTogetherButtons,battleText,
 fight,allEnemies,useLuck,useProvisions } from '../constants/gameElements.js';
 
-import * as items from '../ff01Scripts/ff01Items.js';
+import * as items from './ff01Items.js';
 
 window.onload=function(){
 

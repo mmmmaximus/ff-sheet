@@ -8,17 +8,25 @@ function rollD1(){
 }
 
 // initialise stat variables-------------------------------------------
-var initialSkill = document.getElementById('initialSkill')
-var initialStamina = document.getElementById('initialStamina')
-var initialLuck = document.getElementById('initialLuck')
+var initialSkillRoll = 0
+var initialStaminaRoll = 0
+var initialLuckRoll = 0
+var initialSkillText = document.getElementById('initialSkillText')
+var initialStaminaText = document.getElementById('initialStaminaText')
+var initialLuckText = document.getElementById('initialLuckText')
 
 //roll initial skill stamina luck for setup page
 var rollInitial = document.getElementById('rollInitial')
 rollInitial.addEventListener('click',function(e){
-    // set skill stamina luck values
-    initialSkill.innerHTML = rollD1()+6
-    initialStamina.innerHTML = rollD1()+rollD1()+12
-    initialLuck.innerHTML = rollD1()+6
+    //set skill stamina luck values
+    initialSkillRoll = rollD1()
+    initialStaminaRoll = rollD1()+rollD1()
+    initialLuckRoll = rollD1()
+   
+    // set skill stamina luck text
+    initialSkillText.innerHTML = initialSkillRoll + ' + 6 = '+(initialSkillRoll+6)
+    initialStaminaText.innerHTML = initialStaminaRoll + ' + 12 = '+(initialStaminaRoll+12)
+    initialLuckText.innerHTML = initialLuckRoll + ' + 6 = ' +(initialLuckRoll+6)
 })
 
 //choose potion----------------------------------------------
@@ -33,7 +41,7 @@ var startAdventure = document.getElementById('startAdventure')
 startAdventure.addEventListener('click',function(e){
     
     //check if all initial stats has a value and potion is chosen
-    if(initialSkill.innerHTML=='' || initialStamina.innerHTML=='' || initialLuck.innerHTML=='' || potion.value=='Choose potion'){
+    if(initialSkillRoll==0 || initialStaminaRoll==0 || initialLuckRoll==0 || potion.value=='Choose potion'){
         //check if user wants to proceed despite not having filled in all stats
         alert('Have you rolled your Initial stats and chosen your potion?')
     } else{
@@ -45,12 +53,12 @@ startAdventure.addEventListener('click',function(e){
         provisions.innerHTML = 10
 
         //save initial stats and inventory to storage
-        localStorage.setItem('skill',initialSkill.innerHTML)
-        localStorage.setItem('stamina',initialStamina.innerHTML)
-        localStorage.setItem('luck',initialLuck.innerHTML)
-        localStorage.setItem('initialSkill',initialSkill.innerHTML)
-        localStorage.setItem('initialStamina',initialStamina.innerHTML)
-        localStorage.setItem('initialLuck',initialLuck.innerHTML)
+        localStorage.setItem('skill',initialSkillRoll+6)
+        localStorage.setItem('stamina',initialStaminaRoll+12)
+        localStorage.setItem('luck',initialLuckRoll+6)
+        localStorage.setItem('initialSkill',initialSkillRoll+6)
+        localStorage.setItem('initialStamina',initialStaminaRoll+12)
+        localStorage.setItem('initialLuck',initialLuckRoll+6)
         localStorage.setItem('provisions',provisions.innerHTML)
         localStorage.setItem('inventoryArray',JSON.stringify(inventoryArray))
         window.location.href = 'ff01Game.html'
