@@ -2578,10 +2578,12 @@ function loadSetup(){
         localStorage.setItem('currentPage',1)
     }
     
-    //show the page that stopped at
+    //show the page that saved at
     for(let i=0;i<pages.length;i++){
         if(pages[i].id==localStorage.getItem('currentPage')){
             pages[i].style.display = 'block'
+        } else{
+            pages[0].style.display = 'block' //if save at 1st page 
         }
     }
     
