@@ -108,7 +108,7 @@ let enemyAttackStrengthArray = []
 let enemies = document.getElementsByClassName('enemy')
 
 //page mechanism-----------------------------------------------------------
-let pageLog = []
+let pageLog = ['1']
 let pageNums = document.getElementsByClassName('pageNum')
 
 //define different page and button classes
@@ -2575,15 +2575,13 @@ function loadSetup(){
 
     //if there are no current page saved, show first page
     if(!localStorage.getItem('currentPage')){
-        localStorage.setItem('currentPage',1)
+        localStorage.setItem('currentPage','1')
     }
     
     //show the page that saved at
     for(let i=0;i<pages.length;i++){
         if(pages[i].id==localStorage.getItem('currentPage')){
             pages[i].style.display = 'block'
-        } else{
-            pages[0].style.display = 'block' //if save at 1st page 
         }
     }
     
@@ -2623,7 +2621,7 @@ function loadSetup(){
 
     //load pagelog
     if(localStorage.getItem('pageLog')==null){
-        pageLog = [] // if pagelog is null cuz new game, assign to []
+        pageLog = ['1'] // if pagelog is null cuz new game, assign to []
     } else{
         console.log(localStorage.getItem('pageLog'))
         pageLog = JSON.parse(localStorage.getItem('pageLog'))
